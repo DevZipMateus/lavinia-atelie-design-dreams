@@ -15,7 +15,13 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-elegant-lightgray via-white to-elegant-lightgray"></div>
       
       {/* Decorative elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 border border-elegant-gray/20 rounded-full hidden lg:block"></div>
+      <div className="absolute top-20 left-10 w-32 h-32 border border-elegant-gray/20 rounded-full hidden lg:flex items-center justify-center bg-white/50">
+        <img 
+          src="/lovable-uploads/6b15e74c-74a3-40ca-baed-96ea07d42f06.png" 
+          alt="Lavínia Reis Ateliê" 
+          className="h-16 w-auto object-contain"
+        />
+      </div>
       <div className="absolute bottom-20 right-10 w-24 h-24 border border-elegant-gray/20 rounded-full hidden lg:block"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
