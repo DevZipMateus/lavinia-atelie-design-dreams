@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ImageModal } from "./ImageModal";
 
@@ -10,6 +9,11 @@ const images = [
   "/lovable-uploads/imagens/599272086525068.jpeg",
   "/lovable-uploads/imagens/612771871834628.jpeg",
   "/lovable-uploads/imagens/709346575013413.jpeg",
+  "/lovable-uploads/imagens/1923785121783177.jpeg",
+  "/lovable-uploads/imagens/698816742881057.jpeg",
+  "/lovable-uploads/imagens/1011553054506257.jpeg",
+  "/lovable-uploads/imagens/1017411820372983.jpeg",
+  "/lovable-uploads/imagens/1454726722544336.jpeg",
 ];
 
 export const Gallery = () => {
