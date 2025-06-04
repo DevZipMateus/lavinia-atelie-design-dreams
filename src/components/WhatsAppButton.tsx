@@ -9,7 +9,7 @@ export const WhatsAppButton = () => {
   return (
     <button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-6 right-6 z-50 bg-white hover:bg-gray-50 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-110 group"
+      className="fixed bottom-6 right-6 z-50 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-110 group"
       aria-label="Falar no WhatsApp"
     >
       <img 
