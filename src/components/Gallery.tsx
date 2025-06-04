@@ -6,23 +6,21 @@ import { ImageModal } from "./ImageModal";
 const imageColumns = {
   column1: [
     "/lovable-uploads/imagens/10061146540617369.jpeg",
-    "/lovable-uploads/imagens/2534173120256678.jpeg",
+    "/lovable-uploads/imagens/538570669192943.jpeg",
     "/lovable-uploads/imagens/612771871834628.jpeg",   
     "/lovable-uploads/imagens/709346575013413.jpeg",
-    
+    "/lovable-uploads/imagens/1011553054506257.jpeg",
   ],
   column2: [
     "/lovable-uploads/imagens/1223547896073528.jpeg",
     "/lovable-uploads/imagens/599272086525068.jpeg",
+    "/lovable-uploads/imagens/1017411820372983.jpeg",
     "/lovable-uploads/imagens/698816742881057.jpeg",
-    
   ],
   column3: [
-    "/lovable-uploads/imagens/538570669192943.jpeg",
-    "/lovable-uploads/imagens/1017411820372983.jpeg",
+    "/lovable-uploads/imagens/2534173120256678.jpeg",
     "/lovable-uploads/imagens/1454726722544336.jpeg",
     "/lovable-uploads/imagens/1923785121783177.jpeg",
-    "/lovable-uploads/imagens/1011553054506257.jpeg",
   ],
 };
 
