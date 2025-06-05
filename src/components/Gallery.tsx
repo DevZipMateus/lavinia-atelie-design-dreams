@@ -11,10 +11,10 @@ const allImages = [
   "/lovable-uploads/imagens/599272086525068.jpeg",
   "/lovable-uploads/imagens/1017411820372983.jpeg",
   "/lovable-uploads/imagens/698816742881057.jpeg",
-  "/lovable-uploads/imagens/538570669192943.jpeg",
+  
   "/lovable-uploads/imagens/1011553054506257.jpeg",
   "/lovable-uploads/imagens/1454726722544336.jpeg",
-  "/lovable-uploads/imagens/1923785121783177.jpeg",
+  
   "/lovable-uploads/3ba44205-694c-42e9-9226-8c9036b80111.png",
   "/lovable-uploads/57a5d1d7-ec8d-42d8-a401-70426c3e0a92.png",
 ];
