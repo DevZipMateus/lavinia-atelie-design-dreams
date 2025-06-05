@@ -42,10 +42,7 @@ export const Hero = () => {
           </p>
 
           {/* Description */}
-          <p className="font-inter text-base lg:text-lg text-elegant-charcoal mb-12 max-w-3xl mx-auto leading-relaxed">
-            Vestidos de festa únicos e exclusivos. Criamos peças sob medida e oferecemos aluguel 
-            de vestidos elegantes para tornar seus momentos especiais ainda mais memoráveis.
-          </p>
+          <p className="font-inter text-base lg:text-lg text-elegant-charcoal mb-12 max-w-3xl mx-auto leading-relaxed">Vestidos de festa únicos e exclusivos. Criamos peças sob medida e oferecemos aluguel de vestidos  para tornar seus momentos especiais ainda mais memoráveis.</p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
