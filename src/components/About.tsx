@@ -1,7 +1,5 @@
-
 export const About = () => {
-  return (
-    <section id="about" className="py-20 lg:py-32 bg-elegant-lightgray">
+  return <section id="about" className="py-20 lg:py-32 bg-elegant-lightgray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
@@ -27,11 +25,7 @@ export const About = () => {
           <div className="relative">
             <div className="bg-white p-8 lg:p-12 shadow-xl">
               <div className="text-center">
-                <img 
-                  src="/lovable-uploads/6b15e74c-74a3-40ca-baed-96ea07d42f06.png" 
-                  alt="Lavínia Reis Ateliê" 
-                  className="h-24 lg:h-32 w-auto mx-auto object-contain mb-6"
-                />
+                <img alt="Lavínia Reis Ateliê" src="/lovable-uploads/32f8f303-b240-456f-bde3-9816bcdb73b0.png" className="h-64 lg:h-24 w-auto mx-auto object-contain mb-6" />
                 <blockquote className="font-playfair text-xl lg:text-2xl text-elegant-charcoal italic mb-4">
                   "Desenvolvendo histórias de amor"
                 </blockquote>
@@ -47,6 +41,5 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
