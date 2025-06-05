@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 export const Hero = () => {
   const scrollToServices = () => {
@@ -28,7 +29,7 @@ export const Hero = () => {
         <div className="animate-fade-in">
           {/* Logo */}
           <div className="mb-8">
-            <img alt="Lavínia Reis Ateliê" className="h-80 lg:h-96 w-auto mx-auto object-contain" src="/lovable-uploads/461da74a-ff84-4136-a21a-e3f3fd622979.png" />
+            <img alt="Lavínia Reis Ateliê" className="h-80 lg:h-[500px] xl:h-[600px] w-auto mx-auto object-contain" src="/lovable-uploads/461da74a-ff84-4136-a21a-e3f3fd622979.png" />
           </div>
 
           {/* Main heading */}
@@ -65,3 +66,4 @@ export const Hero = () => {
       </div>
     </section>;
 };
+
