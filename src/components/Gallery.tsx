@@ -2,33 +2,33 @@
 import { useState } from "react";
 import { ImageModal } from "./ImageModal";
 
-// Configuração das colunas - você pode reorganizar as imagens aqui
-const imageColumns = {
-  column1: [
-    "/lovable-uploads/imagens/10061146540617369.jpeg",//marron  
-    "/lovable-uploads/imagens/612771871834628.jpeg",//marron   
-    "/lovable-uploads/imagens/709346575013413.jpeg",//marron   
-    "/lovable-uploads/imagens/2534173120256678.jpeg",//marron 
+// Configuração das fileiras por cor
+const imageRows = {
+  marron: [
+    "/lovable-uploads/imagens/10061146540617369.jpeg",
+    "/lovable-uploads/imagens/612771871834628.jpeg",
+    "/lovable-uploads/imagens/709346575013413.jpeg",
+    "/lovable-uploads/imagens/2534173120256678.jpeg",
   ],
-  column2: [
-    "/lovable-uploads/imagens/1223547896073528.jpeg",//branco
-    "/lovable-uploads/imagens/599272086525068.jpeg",//branco
-    "/lovable-uploads/imagens/1017411820372983.jpeg",//branco
-    "/lovable-uploads/imagens/698816742881057.jpeg",//branco
+  branco: [
+    "/lovable-uploads/imagens/1223547896073528.jpeg",
+    "/lovable-uploads/imagens/599272086525068.jpeg",
+    "/lovable-uploads/imagens/1017411820372983.jpeg",
+    "/lovable-uploads/imagens/698816742881057.jpeg",
   ],
-  column3: [
-    "/lovable-uploads/imagens/538570669192943.jpeg",//rosa
-    "/lovable-uploads/imagens/1011553054506257.jpeg",//rosa   
-    "/lovable-uploads/imagens/1454726722544336.jpeg",//rosa
-    "/lovable-uploads/imagens/1923785121783177.jpeg",//rosa
+  rosa: [
+    "/lovable-uploads/imagens/538570669192943.jpeg",
+    "/lovable-uploads/imagens/1011553054506257.jpeg",
+    "/lovable-uploads/imagens/1454726722544336.jpeg",
+    "/lovable-uploads/imagens/1923785121783177.jpeg",
   ],
 };
 
 // Array único com todas as imagens para o modal
 const allImages = [
-  ...imageColumns.column1,
-  ...imageColumns.column2,
-  ...imageColumns.column3,
+  ...imageRows.marron,
+  ...imageRows.branco,
+  ...imageRows.rosa,
 ];
 
 export const Gallery = () => {
@@ -53,31 +53,36 @@ export const Gallery = () => {
     setCurrentImageIndex((prev) => (prev - 1 + allImages.length) % allImages.length);
   };
 
-  const renderColumn = (images: string[], columnIndex: number) => (
-    <div key={columnIndex} className="flex flex-col gap-6">
-      {images.map((image, index) => (
-        <div
-          key={`${columnIndex}-${index}`}
-          className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-          onClick={() => openModal(image)}
-        >
-          <div className="aspect-[3/4] overflow-hidden">
-            <img
-              src={image}
-              alt={`Vestido ${columnIndex + 1}-${index + 1}`}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              loading="lazy"
-            />
-          </div>
-          
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-            <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <p className="text-sm font-medium">Clique para ampliar</p>
+  const renderRow = (images: string[], colorName: string) => (
+    <div key={colorName} className="mb-12">
+      <h3 className="font-playfair text-2xl lg:text-3xl text-elegant-black mb-6 text-center capitalize">
+        Vestidos {colorName === 'marron' ? 'Marrons' : colorName === 'branco' ? 'Brancos' : 'Rosas'}
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {images.map((image, index) => (
+          <div
+            key={`${colorName}-${index}`}
+            className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            onClick={() => openModal(image)}
+          >
+            <div className="aspect-[3/4] overflow-hidden">
+              <img
+                src={image}
+                alt={`Vestido ${colorName} ${index + 1}`}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
+              />
+            </div>
+            
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+              <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm font-medium">Clique para ampliar</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 
@@ -94,11 +99,11 @@ export const Gallery = () => {
           </p>
         </div>
 
-        {/* Gallery Grid - 3 Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {renderColumn(imageColumns.column1, 0)}
-          {renderColumn(imageColumns.column2, 1)}
-          {renderColumn(imageColumns.column3, 2)}
+        {/* Gallery Rows - Organized by color */}
+        <div className="space-y-16">
+          {renderRow(imageRows.marron, 'marron')}
+          {renderRow(imageRows.branco, 'branco')}
+          {renderRow(imageRows.rosa, 'rosa')}
         </div>
       </div>
 
