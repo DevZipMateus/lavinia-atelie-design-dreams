@@ -5,22 +5,22 @@ import { ImageModal } from "./ImageModal";
 // Configuração das colunas - você pode reorganizar as imagens aqui
 const imageColumns = {
   column1: [
-    "/lovable-uploads/imagens/10061146540617369.jpeg",  
-    "/lovable-uploads/imagens/612771871834628.jpeg",   
-    "/lovable-uploads/imagens/709346575013413.jpeg",   
-    "/lovable-uploads/imagens/2534173120256678.jpeg", 
+    "/lovable-uploads/imagens/10061146540617369.jpeg",//marron  
+    "/lovable-uploads/imagens/612771871834628.jpeg",//marron   
+    "/lovable-uploads/imagens/709346575013413.jpeg",//marron   
+    "/lovable-uploads/imagens/2534173120256678.jpeg",//marron 
   ],
   column2: [
-    "/lovable-uploads/imagens/1223547896073528.jpeg",
-    "/lovable-uploads/imagens/599272086525068.jpeg",
-    "/lovable-uploads/imagens/1017411820372983.jpeg",
-    "/lovable-uploads/imagens/698816742881057.jpeg",
+    "/lovable-uploads/imagens/1223547896073528.jpeg",//branco
+    "/lovable-uploads/imagens/599272086525068.jpeg",//branco
+    "/lovable-uploads/imagens/1017411820372983.jpeg",//branco
+    "/lovable-uploads/imagens/698816742881057.jpeg",//branco
   ],
   column3: [
-    "/lovable-uploads/imagens/538570669192943.jpeg",
-    "/lovable-uploads/imagens/1011553054506257.jpeg",   
-    "/lovable-uploads/imagens/1454726722544336.jpeg",
-    "/lovable-uploads/imagens/1923785121783177.jpeg",
+    "/lovable-uploads/imagens/538570669192943.jpeg",//rosa
+    "/lovable-uploads/imagens/1011553054506257.jpeg",//rosa   
+    "/lovable-uploads/imagens/1454726722544336.jpeg",//rosa
+    "/lovable-uploads/imagens/1923785121783177.jpeg",//rosa
   ],
 };
 
