@@ -18,10 +18,8 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-white/70"></div>
       
       {/* Decorative elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 border border-elegant-gray/20 rounded-full hidden lg:flex items-center justify-center bg-white/80">
-        
-      </div>
-      <div className="absolute bottom-20 right-10 w-24 h-24 border border-elegant-gray/20 rounded-full hidden lg:block bg-white/50"></div>
+      
+      
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
