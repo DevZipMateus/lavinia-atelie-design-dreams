@@ -27,7 +27,7 @@ export const Hero = () => {
         <div className="animate-fade-in">
           {/* Logo */}
           <div className="mb-8">
-            <img src="/lovable-uploads/6b15e74c-74a3-40ca-baed-96ea07d42f06.png" alt="Lavínia Reis Ateliê" className="h-64 lg:h-32 w-auto mx-auto object-contain" />
+            <img alt="Lavínia Reis Ateliê" className="h-64 lg:h-32 w-auto mx-auto object-contain" src="/lovable-uploads/461da74a-ff84-4136-a21a-e3f3fd622979.png" />
           </div>
 
           {/* Main heading */}
