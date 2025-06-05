@@ -7,14 +7,14 @@ export const Services = () => {
     {
       icon: <Scissors className="w-12 h-12 text-elegant-charcoal" />,
       title: "Vestidos Sob Medida",
-      description: "Criamos vestidos únicos e personalizados, desenvolvidos especialmente para você. Cada peça é pensada nos mínimos detalhes para realçar sua beleza natural.",
+      description: "Criamos vestidos únicos e personalizados, desenvolvidos especialmente para você. Cada peça é pensada nos mínimos detalhes para realçar sua beleza.",
       features: ["Consultoria personalizada", "Tecidos premium", "Acabamento exclusivo", "Prova de vestido"]
     },
     {
       icon: <Heart className="w-12 h-12 text-elegant-charcoal" />,
       title: "Aluguel de Vestidos",
       description: "Nossa coleção exclusiva de vestidos de festa para aluguel. Peças elegantes e sofisticadas para seus momentos especiais.",
-      features: ["Coleção exclusiva", "Diversos tamanhos", "Preços acessíveis", "Atendimento especializado"]
+      features: ["Coleção exclusiva", "Diversos tamanhos", "Atendimento especializado"]
     }
   ];
 
