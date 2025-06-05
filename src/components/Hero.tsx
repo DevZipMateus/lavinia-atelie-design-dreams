@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 export const Hero = () => {
   const scrollToServices = () => {
@@ -21,7 +19,7 @@ export const Hero = () => {
       
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-32 h-32 border border-elegant-gray/20 rounded-full hidden lg:flex items-center justify-center bg-white/80">
-        <img src="/lovable-uploads/6b15e74c-74a3-40ca-baed-96ea07d42f06.png" alt="Lavínia Reis Ateliê" className="h-16 w-auto object-contain" />
+        
       </div>
       <div className="absolute bottom-20 right-10 w-24 h-24 border border-elegant-gray/20 rounded-full hidden lg:block bg-white/50"></div>
       
@@ -66,4 +64,3 @@ export const Hero = () => {
       </div>
     </section>;
 };
-
