@@ -90,7 +90,7 @@ export const Gallery = () => {
             Nossa Galeria
           </h2>
           <p className="font-inter text-lg text-elegant-gray max-w-2xl mx-auto">
-            Confira alguns dos nossos trabalhos de costura e ajustes realizados com dedicação e expertise.
+            Confira alguns dos nossos trabalhos realizados com dedicação e expertise.
           </p>
         </div>
 
