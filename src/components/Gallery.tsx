@@ -3,6 +3,8 @@ import { ImageModal } from "./ImageModal";
 
 // Array único com todas as imagens
 const allImages = [
+  "/lovable-uploads/1380068103697757.jpeg",
+  "/lovable-uploads/1729736884364348.jpeg",
   "/lovable-uploads/imagens/10061146540617369.jpeg",
   "/lovable-uploads/imagens/612771871834628.jpeg",
   "/lovable-uploads/imagens/709346575013413.jpeg",
